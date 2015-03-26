@@ -1,0 +1,28 @@
+#include <stdio.h>
+typedef struct acoes{
+int codigo_de_idenficacao_da_acao, contador_de_uso_da_acao;
+char nome_da_acao[40], data_da_acao[12], hora_da_acao[10], tipo_da_acao[40]
+};
+
+typedef struct dados_user{
+   char CPF[15], nome_do_usuario[14], e-mail[20], senha[16],  cidade[40], estado[20], profissao[20];
+   char genero[1], acoes_realizadas_pelo_usuario[140], assuntos_de_interesse[40];
+   int idade, tipo_de_relacionamento;
+   struct acoes dados_das_acoes_possiveis[3];
+};
+
+
+typedef struct interesse{
+int codigo_de_idenficacao;
+char tipo_de_pagina_ou_grupo[40], titulo[40], tema[30], dados_das_acoes_possiveis_por_usuarios_nao_administradores[50];
+struct acoes dados_das_acoes_possiveis[3];
+};
+
+typedef struct marketing{
+int codigo_da_empresa, valor_para_incluir_banners_de_marketing;
+char nome_do_produto/servico[40], localizacao_da_propaganda_da_pagina[40], opcao_de_armazenamento_de_cookies_dos_usuarios[40];
+char periodo_de_tempo_do_banner_da_pagina[40];
+};
+
+
+
