@@ -23,6 +23,12 @@ int codigo_da_empresa, valor_para_incluir_banners_de_marketing;
 char nome_do_produto/servico[40], localizacao_da_propaganda_da_pagina[40], opcao_de_armazenamento_de_cookies_dos_usuarios[40];
 char periodo_de_tempo_do_banner_da_pagina[40];
 };
+int main(void){
+printf("Bem vindo ao GeekBook!!!!");
+printf("")
 
+
+
+}
 
 
