@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct acoes{
+    int codigo_de_idenficacao_da_acao, contador_de_uso_da_acao;
+    char nome_da_acao[40], data_da_acao[12], hora_da_acao[10], tipo_da_acao[40];
+};
+
+typedef struct dados_user{
+    char CPF[15], nome_do_usuario[14], e-mail[20], senha[16],  cidade[40], estado[20], profissao[20];
+    char genero[1], acoes_realizadas_pelo_usuario[140], assuntos_de_interesse[40];
+    int idade, tipo_de_relacionamento;
+    struct acoes dados_das_acoes_possiveis[3];
+};
+
+
+typedef struct interesse{
+    int codigo_de_idenficacao;
+    char tipo_de_pagina_ou_grupo[40], titulo[40], tema[30], dados_das_acoes_possiveis_por_usuarios_nao_administradores[50];
+    struct acoes dados_das_acoes_possiveis[3];
+};
+
+typedef struct marketing{
+    int codigo_da_empresa, valor_para_incluir_banners_de_marketing;
+    char nome_do_produto_servico[40], localizacao_da_propaganda_da_pagina[40], opcao_de_armazenamento_de_cookies_dos_usuarios[40];
+    char periodo_de_tempo_do_banner_da_pagina[40];
+};
+int main(void){
+    int esc, tam;
+    printf("digite a quantidade de cadastros");
+    scanf("%d", &tam);
+    struct action[tam];
+    struct data_user[tam];
+    struct interests[tam];
+    struct propaganda[tam];
+    printf("Bem vindo ao GeekBook!!!!");
+    printf("digite a q");
+            printf("Menu");
+    printf("1 acoes");
+    scanf("%d", &esc);
+    switch(esc){
+    case 1:{
+        for(i=0; i>tam, i++){
+            printf("Digite codigo de idenficação da ação: ");
+            scanf("%d", &action[i].codigo_de_idenficacao_da_acao);
+            printf("Digite o contador de uso da ação");
+            scanf("%d", &action[i].contador_de_uso_da_acao);
+            printf("Digite o nome da acao");
+            gets(&action[i].nome_da_acao);
+            printf("Digite a data da ação");
+            gets(&action[i].data_da_acao);
+            printf("Digite a hora da ação");
+            gets(&action[i].hora_da_acao);
+            printf("Digite o tipo da ação");
+            gets(&action[i].tipo_da_acao);
+        }
+    }
+        break;
+    case 2:{
+        for(i=0; i<tam, i++){
+            printf("Digite o CPF");
+            gets(dados_user[i].CPF);
+            printf("Digite o nome do usuário");
+            gets(dados_user[i].nome_do_usuario);
+
+        }
+   }
+
+        break;
+    case 3:{
+        for (i=0; i<tam, i++){
+            printf("Digite o código de identificação");
+            scanf("%d", &interests[i].codigo_de_identificacao)
+        }
+    }
+        break;
+    case 4:{
+        for (i=0; i<tam, i++){
+        printf("Digite o código da empresa");
+        scanf("%d", &propaganda[i].codigo_da_empresa);
+
+        }
+    }
+    default:
+    }
+
+
+
+}
